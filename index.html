@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+    <head>
+        <meta charset="utf-8" />
+        <link rel="icon" href="#" />  <!--insert favicon for the website-->
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <meta
+        name="description"
+        content="This website is created by Rudra Narayan Sahoo, a mechanical engineer, currently working in Tata Advanced Systems Limited, an aerospace industry. This website describes about the educational background, past work experience, various skillset and future goals of the author."
+        />
+        <meta name="author" content="Rudra Narayan Sahoo"/>
+        <title>Portfolio of Rudrans</title>
+        <link rel="stylesheet" href="styles.css"/>
+    </head>
+
+    <body>
+
+        <!----------------------------------- HEADER --------------------------------->
+        <header class="header">
+            <h1 class="website-name">
+                Portfolio of Rudrans
+            </h1>
+            <!--------------------------- NAVIGATION BAR --------------------------->
+            <nav class="nav">
+                <ul class="list">
+                    <li>
+                        <a href="index.html">Home</a>
+                    </li>
+                    <li>
+                        <a href="about.html">About Me</a>
+                    </li>
+                    <li>
+                        <a href="contact.html">Contact Me</a>
+                    </li>
+                    <li>
+                        <a href="https://www.canva.com/design/DAGHgjn5VZ8/Wp1QEf5P8hrMP3I3fEpXAA/view?utm_content=DAGHgjn5VZ8&utm_campaign=designshare&utm_medium=link&utm_source=editor">My Resume</a>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+
+        <!--------------------------------------- MAIN ------------------------------------->
+        <main>
+
+            <!--------------------------------- ABOUT ME --------------------------------->
+            <div class="about-me">
+                <div class="col1">
+                    <h1>Rudra Narayan Sahoo</h1>
+                    <br/>
+                    <p>Hi, You can call me Rudra. I am a Mechanical engineer working at Tata Advanced Systems Limited, Hyderabad as a graduate engineer trainee (GET) since July, 2023. I am passionate about new technologies like GenAI, Cloud Computing, etc. I am now looking forward to switching to IT company. I also embrace startups and innovations.</p>
+                    <br/>
+                    <button class="btn" style="width: 120px; font-size: medium; border-radius: 10px;" onclick="more()">More</button>
+                </div>
+                <div class="col2">
+                    <img src="My Photo.jpg"/>
+                </div>
+            </div>
+
+            <!---------------------------------- MY PROJECTS ------------------------------->
+            <section class="project-container">
+                <h2>My Projects</h2>
+                <br/>
+                <div class="cards">
+                    <article class="card">
+                        <div class="card-img"></div>
+                        <div class="card-info">
+                            <span class="card-name">My Digital Portfolio</span>
+                            <h3 class="card-line">This is my first website that I built using HTML, CSS and javascript. Apart from this, I did very small projects like color picker game, calculator and others. Check out below my upcoming project.</h3>
+                        </div>
+                    </article>
+                </div>
+            </section>
+            <br/>
+            <br/>
+
+            <!---------------------------------- MY UPCOMING PROJECTS ------------------------------->
+            <section class="upcoming-project-container">
+                <h2>My Upcoming Projects</h2>
+                <br/>
+                <div class="cards">
+                    <article class="card">
+                        <div class="up-card-img"></div>
+                        <div class="card-info">
+                            <span class="card-name">Amazon Clone</span>
+                            <h3 class="card-line">Currently I am working on building an ecommerce site like Amazon. It would look similar to Amazon and have similar functionality. I will be using React.js and Bootstrap for making it interactive and responsive.</h3>
+                        </div>
+                    </article>
+                </div>
+            </section>
+
+            <!---------------------------------- SKILL HIGHLIGHTS ------------------------------->
+            <section class="upcoming-project-container">
+                <h2>SKILLS</h2>
+                <br/>
+                <div class="bars-container">
+                    <p>HTML</p>
+                    <div class="container-bar">
+                        <div class="skills html">70%</div>
+                    </div>
+                    <br/>
+                    <p>CSS & Bootstrap</p>
+                    <div class="container-bar">
+                        <div class="skills css">70%</div>
+                    </div>
+                    <br/>
+                    <p>JavaScript, React.JS & Express.JS</p>
+                    <div class="container-bar">
+                        <div class="skills js">60%</div>
+                    </div>
+                    <br/>
+                    <p>Git & GitHub</p>
+                    <div class="container-bar">
+                        <div class="skills git">90%</div>
+                    </div>
+                    <br/>
+                    <p>MongoDB</p>
+                    <div class="container-bar">
+                        <div class="skills mongo">60%</div>
+                    </div>
+                    <br/>
+                    <p>Python</p>
+                    <div class="container-bar">
+                        <div class="skills python">60%</div>
+                    </div>
+                    <br/>
+                    <p>SQL</p>
+                    <div class="container-bar">
+                        <div class="skills sql">60%</div>
+                    </div>
+                    <br/>
+                    <p>ML, GenAI, Prompot Engineering</p>
+                    <div class="container-bar">
+                        <div class="skills genai">30%</div>
+                    </div>
+                    <br/>
+                    <p>Cloud Computing</p>
+                    <div class="container-bar">
+                        <div class="skills cloud">30%</div>
+                    </div><br/>
+                </div>
+            </section>
+            
+            <!------------ Contact section starts here ------------>
+            <div class="contact-container">
+                <section class="contact-box">
+                    <form>
+                        <h2>Wanna Message Me!</h2>
+                        <input type="text" name="name" id="name1" class="field" placeholder="Narendra Modi" required/>
+                        <input type="email" name="email" id="email1" class="field" placeholder="modi@pmo.in" required/>
+                        <textarea name="message" placeholder="Your profile seems to be a good fit for our role.." id="message1" class="field" required></textarea>
+                        <button class="btn" onclick="sendMessage()">Send</button>
+                    </form>
+                </section>
+            </div>
+
+        </main>
+
+        <!------------- Footer section begins here -------------->
+        <footer class="footer">
+
+            <!--Waves-->
+            <div class="waves">
+                <div class="wave" id="wave1"></div>
+                <div class="wave" id="wave2"></div>
+                <div class="wave" id="wave3"></div>
+                <div class="wave" id="wave4"></div>
+            </div>
+
+            <!--Social icons-->
+            <ul class="social-icon">
+                <li class="social-icon__item">
+                    <a class="social-icon__link" href="#">
+                        <ion-icon name="logo-github"></ion-icon>
+                    </a>
+                </li>
+                <li class="social-icon__item">
+                    <a class="social-icon__link" href="#">
+                        <ion-icon name="logo-linkedin"></ion-icon>
+                    </a>
+                </li>
+            </ul>
+
+            <!--Navigation menu-->
+            <ul class="menu">
+                <li class="menu__item"><a class="menu__link" href="index.html">Home</a></li>
+                <li class="menu__item"><a class="menu__link" href="about.html">About Me</a></li>
+                <li class="menu__item"><a class="menu__link" href="contact.html">Contact Me</a></li>
+                <li class="menu__item"><a class="menu__link" href="#">My Resume</a></li>
+            </ul>
+
+            <!--Copyright note-->
+            <p>&copy;2024 Portfolio of Rudrans | All Rights Reserved</p>
+
+        </footer>
+
+        <!--social icons source link-->
+        <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+        <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+        <!--linking to js file-->
+        <script src="script.js"></script>
+
+    </body>
+
+</html>
